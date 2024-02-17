@@ -1,0 +1,440 @@
+[0.036s] Invoking command in '/home/rajesh/multi_tb3/build/turtlebot3_gazebo': AMENT_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:/opt/ros/humble /usr/bin/cmake /home/rajesh/multi_tb3/src/Multi-turtlebot3-Gazebo-ROS2/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/rajesh/multi_tb3/install/turtlebot3_gazebo
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.107s] -- The CXX compiler identification is GNU 11.4.0
+[0.112s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.157s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.157s] -- Detecting C compile features
+[0.157s] -- Detecting C compile features - done
+[0.159s] -- Detecting CXX compiler ABI info
+[0.207s] -- Detecting CXX compiler ABI info - done
+[0.217s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.218s] -- Detecting CXX compile features
+[0.218s] -- Detecting CXX compile features - done
+[0.221s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.341s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.401s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.401s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.401s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.401s]   problems in calling code that expects `find_package` result variables
+[0.401s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.401s] Call Stack (most recent call first):
+[0.401s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.402s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.402s]   CMakeLists.txt:23 (find_package)
+[0.402s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.402s] [0m
+[0.402s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.404s] -- Checking for module 'bullet>=2.82'
+[0.410s] --   Found bullet, version 3.05
+[0.466s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.495s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.516s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.625s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.637s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.639s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.643s] -- Searching for dependencies of ignition-math6
+[0.644s] -- Looking for OGRE...
+[0.644s] -- OGRE_PREFIX_WATCH changed.
+[0.647s] -- Checking for module 'OGRE'
+[0.654s] --   Found OGRE, version 1.9.0
+[0.672s] -- Found Ogre Ghadamon (1.9.0)
+[0.678s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.685s] -- Looking for OGRE_Paging...
+[0.688s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.688s] -- Looking for OGRE_Terrain...
+[0.691s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.691s] -- Looking for OGRE_Property...
+[0.694s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.694s] -- Looking for OGRE_RTShaderSystem...
+[0.697s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.697s] -- Looking for OGRE_Volume...
+[0.700s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.700s] -- Looking for OGRE_Overlay...
+[0.703s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.766s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.767s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.767s] -- Searching for dependencies of ignition-transport8
+[0.778s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.785s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.788s] -- Checking for module 'libzmq >= 4'
+[0.795s] --   Found libzmq , version 4.3.4
+[0.815s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[0.818s] -- Checking for module 'uuid'
+[0.825s] --   Found uuid, version 2.37.2
+[0.846s] -- Found UUID: TRUE  
+[0.848s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.848s] -- Searching for dependencies of ignition-msgs5
+[0.861s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.864s] -- Checking for module 'tinyxml2'
+[0.871s] --   Found tinyxml2, version 9.0.0
+[0.892s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.893s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.894s] -- Searching for dependencies of ignition-common3
+[0.894s] -- Looking for dlfcn.h - found
+[0.894s] -- Looking for libdl - found
+[0.895s] -- Found DL: TRUE  
+[0.902s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[0.902s] -- Searching for <ignition-common3> component [graphics]
+[0.904s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.904s] -- Searching for dependencies of ignition-common3-graphics
+[0.904s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.906s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.906s] -- Searching for dependencies of ignition-fuel_tools4
+[0.949s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[0.955s] -- Checking for module 'jsoncpp'
+[0.961s] --   Found jsoncpp, version 1.9.5
+[0.979s] -- Found JSONCPP: TRUE  
+[0.983s] -- Checking for module 'libzip'
+[0.990s] --   Found libzip, version 1.7.3
+[1.008s] -- Found ZIP: TRUE  
+[1.008s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.008s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.009s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.012s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[1.013s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.033s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.036s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.041s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.050s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.064s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.143s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.201s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.239s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.241s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.310s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.326s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.359s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.366s] -- Found Threads: TRUE  
+[1.451s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.509s] -- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)
+[1.561s] -- Configuring done
+[1.579s] -- Generating done
+[1.580s] -- Build files have been written to: /home/rajesh/multi_tb3/build/turtlebot3_gazebo
+[1.589s] Invoked command in '/home/rajesh/multi_tb3/build/turtlebot3_gazebo' returned '0': AMENT_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:/opt/ros/humble /usr/bin/cmake /home/rajesh/multi_tb3/src/Multi-turtlebot3-Gazebo-ROS2/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/rajesh/multi_tb3/install/turtlebot3_gazebo
+[1.592s] Invoking command in '/home/rajesh/multi_tb3/build/turtlebot3_gazebo': AMENT_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:/opt/ros/humble /usr/bin/cmake --build /home/rajesh/multi_tb3/build/turtlebot3_gazebo -- -j12 -l12
+[1.625s] [ 12%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[1.636s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[1.636s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[1.636s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[9.923s] [ 62%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[10.068s] [ 75%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[10.090s] [ 75%] Built target obstacle1
+[10.782s] [ 75%] Built target turtlebot3_drive
+[13.426s] [ 87%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[13.590s] [ 87%] Built target obstacle2
+[15.272s] [100%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[15.420s] [100%] Built target obstacles
+[15.429s] Invoked command in '/home/rajesh/multi_tb3/build/turtlebot3_gazebo' returned '0': AMENT_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:/opt/ros/humble /usr/bin/cmake --build /home/rajesh/multi_tb3/build/turtlebot3_gazebo -- -j12 -l12
+[15.449s] Invoking command in '/home/rajesh/multi_tb3/build/turtlebot3_gazebo': AMENT_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:/opt/ros/humble /usr/bin/cmake --install /home/rajesh/multi_tb3/build/turtlebot3_gazebo
+[15.453s] -- Install configuration: ""
+[15.454s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[15.457s] -- Set runtime path of "/home/rajesh/multi_tb3/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive" to ""
+[15.457s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[15.457s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_velodyne_burger.launch.py
+[15.457s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_burger.launch.py
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_turtlebot3_world.launch.py
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_turtlebot3_velodyne_world.launch.py
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/lds.dae
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/r200.dae
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/waffle_base.dae
+[15.458s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/meshes/tire.dae
+[15.459s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[15.459s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0
+[15.459s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae
+[15.459s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/lds.dae
+[15.459s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/left_tire.dae
+[15.460s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/burger_base.dae
+[15.467s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes_dae/right_tire.dae
+[15.468s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/model.sdf
+[15.469s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/model.config
+[15.469s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes
+[15.469s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/left_tire.stl
+[15.469s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/burger_base.stl
+[15.472s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/right_tire.stl
+[15.473s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_0/meshes/lds.stl
+[15.473s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne
+[15.473s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae
+[15.473s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/lds.dae
+[15.474s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/left_tire.dae
+[15.476s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/burger_base.dae
+[15.482s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes_dae/right_tire.dae
+[15.484s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/model.sdf
+[15.484s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/model.config
+[15.484s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes
+[15.484s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/left_tire.stl
+[15.485s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/burger_base.stl
+[15.488s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/right_tire.stl
+[15.488s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne/meshes/lds.stl
+[15.489s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0
+[15.489s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae
+[15.489s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/lds.dae
+[15.490s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/left_tire.dae
+[15.492s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/burger_base.dae
+[15.497s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes_dae/right_tire.dae
+[15.499s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/model.sdf
+[15.499s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/model.config
+[15.499s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes
+[15.499s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/left_tire.stl
+[15.500s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/burger_base.stl
+[15.502s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/right_tire.stl
+[15.503s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/meshes/lds.stl
+[15.503s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_0/model-1_4.sdf
+[15.503s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room
+[15.503s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/troom.blend1
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/model.sdf
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/model.config
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes/wall.dae
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes/hexagon.dae
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/meshes/turtleroom.dae
+[15.504s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_room/troom.blend
+[15.505s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[15.505s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae
+[15.505s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/lds.dae
+[15.506s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/left_tire.dae
+[15.507s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/burger_base.dae
+[15.513s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes_dae/right_tire.dae
+[15.515s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[15.515s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[15.515s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes
+[15.515s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/left_tire.stl
+[15.515s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/burger_base.stl
+[15.518s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/right_tire.stl
+[15.519s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/meshes/lds.stl
+[15.519s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[15.519s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[15.519s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[15.520s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[15.521s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/world
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/world/example.world
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/launch
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/launch/example.launch.py
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/rviz
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/rviz/example.rviz
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/package.xml
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/CMakeLists.txt
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/CHANGELOG.rst
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/env-hooks
+[15.522s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/env-hooks/velodyne_description.dsv.in
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_base.dae
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_2.stl
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_1.dae
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_2.dae
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_base.stl
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_base_1.stl
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_scan.stl
+[15.523s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_scan.dae
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/VLP16_scan.dae
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/meshes/HDL32E_scan.stl
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf/VLP-16.urdf.xacro
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf/example.urdf.xacro
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/velodyne_description/urdf/HDL-32E.urdf.xacro
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[15.524s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/scripts
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/scripts/tunnel.material
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/textures
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/materials/textures/tunnel.png
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/model.sdf
+[15.525s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_tunnel/model.config
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/scripts
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/scripts/traffic_stop.material
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/textures
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/materials/textures/traffic_stop.png
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/model.sdf
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_stop/model.config
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/scripts
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/scripts/course.material
+[15.526s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/textures
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/materials/textures/course.png
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/model.sdf
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/course/model.config
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/scripts
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/scripts/traffic_parking.material
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/textures
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/materials/textures/traffic_parking.png
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/model.sdf
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_parking/model.config
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_yellow
+[15.527s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_yellow/model.sdf
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_yellow/model.config
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/ground
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/ground/model.sdf
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/ground/model.config
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_green
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_green/model.sdf
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_green/model.config
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/lights
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/lights/model.sdf
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/lights/model.config
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_obstacles
+[15.528s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_obstacles/model.sdf
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_obstacles/model.config
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_wall
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_wall/model.sdf
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/tunnel_wall/model.config
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_red
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_red/model.sdf
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_light_red/model.config
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/model.config
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/scripts
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/scripts/traffic_bar.material
+[15.529s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/textures
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/materials/textures/traffic_bar.png
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/model.sdf
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_down/model.config
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/scripts
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/scripts/traffic_bar.material
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/textures
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/materials/textures/traffic_bar.png
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/model.sdf
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace/traffic_bar_up/model.config
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[15.530s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes/lds.dae
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes/tire.dae
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/meshes/waffle_pi_base.dae
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/lds.dae
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/left_tire.dae
+[15.531s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/burger_base.dae
+[15.533s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes_dae/right_tire.dae
+[15.535s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/model.sdf
+[15.535s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/model.config
+[15.535s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes
+[15.535s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/left_tire.stl
+[15.535s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/burger_base.stl
+[15.538s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/right_tire.stl
+[15.539s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_1/meshes/lds.stl
+[15.539s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1
+[15.539s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae
+[15.539s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/lds.dae
+[15.540s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/left_tire.dae
+[15.542s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/burger_base.dae
+[15.548s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes_dae/right_tire.dae
+[15.549s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/model.sdf
+[15.549s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/model.config
+[15.549s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes
+[15.549s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/left_tire.stl
+[15.550s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/burger_base.stl
+[15.553s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/right_tire.stl
+[15.553s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_velodyne_1/meshes/lds.stl
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces/waffle_pi.model
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces/burger.model
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autoraces/waffle.model
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3/waffle_pi.model
+[15.554s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3/burger.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3/waffle.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2/waffle_pi.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2/burger.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2/waffle.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_velodyne_robots.world
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4/waffle_pi.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4/burger.model
+[15.555s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4/waffle.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds/waffle_pi.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds/burger.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_worlds/waffle.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_tc_robots.world
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1/waffle_pi.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1/burger.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1/waffle.model
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/example.world
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds
+[15.556s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds/waffle_pi.model
+[15.557s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds/burger.model
+[15.557s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_worlds/waffle.model
+[15.557s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses
+[15.557s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses/waffle_pi.model
+[15.557s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses/burger.model
+[15.557s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_houses/waffle.model
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_tc_two_robots.world
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_tc_two_robots_velodyne.world
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_velodyne_burger.urdf
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/include/
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[15.558s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[15.559s] -- Installing: /home/rajesh/multi_tb3/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[15.560s] Invoked command in '/home/rajesh/multi_tb3/build/turtlebot3_gazebo' returned '0': AMENT_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajesh/multi_tb3/install/velodyne_description:/home/rajesh/multi_tb3/install/turtlebot3_description:/opt/ros/humble /usr/bin/cmake --install /home/rajesh/multi_tb3/build/turtlebot3_gazebo
